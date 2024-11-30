@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamental</title>
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!--fonts-->
+
+  <link rel="stylesheet" href="fundamental-style.css">
+</head>
+<body style="padding-bottom: 1000px;">
+<!--SQL SELECT STATEMENT-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL SELECT Statement</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The SQL SELECT statement is used to select (retrieve) data from a database table.
+    </div>
+    <h4>Example:</h4>
+
+    <div class="sql-join-img">
+      <img src="images/sql-select-statement.png" alt="">
+    </div>
+
+    <div class="sql-join-info">
+      The above SQL query selects the first_name of all the customers from 
+      the Customers table.
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+
+<!--SQL SELECT Syntax-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL SELECT Syntax</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The syntax of the SQL Select Statement is:
+    </div>
+    
+
+    <div class="sql-join-img">
+      <img class="img-sql-select-syntax" src="images/sql-select-syntax.png" alt="">
+    </div>
+
+    <div class="sql-join-info">
+      Here,
+    </div>
+    <ul class="sql-join-list">
+      <li> column 1, column 2, .... are the table columns</li>
+      <li> table is the table name from we select the data</li>
+    </ul>
+
+    <h4>Example</h4>
+
+    <div class="sql-join-img">
+      <img class="img-sql-select-syntax" src="images/sql-select-syntax1.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="result">
+    Here, the SQL command selects the first_name and last_name of all
+    customers in the Customers table.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-select-syntax2.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--SQL SELECT ALL-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL SELECT ALL</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      To select all columns from a database table, we use "*" character. For example,
+    </div>
+
+    <div class="sql-join-img">
+      <img class="img-sql-select-all" src="images/sql-select-all.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="result">
+    Here, the SQL command selects all columns of the Customers table.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-select-all2.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--WHERE Clause-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>WHERE Clause</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      A SELECT statement can have an optional WHERE clause. The WHERE clause allows us to 
+      fetch records from a database table that matches specified condition(s). For example,
+    </div>
+
+    <div class="sql-join-img">
+      <img class="img-sql-select-all" src="images/sql-where-clause.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="result">
+    Here, the SQL command selects all customers from the Customers table with the last_name Doe.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-where-clause1.png" alt="">
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      Let's look another example
+    </div>
+
+    <div class="sql-join-img">
+      <img class="img-sql-select-all" src="images/sql-where-clause2.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="result">
+    Here, the SQL command select the age and country columns of all the customers whose country is USA.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-where-clause3.png" alt="">
+</div>
+
+<div class="first-container">
+  <div class="result">
+    We can also use the WHERE clause with the UPDATE Statement to edit existing rows in a database table.
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      <span>NOTE: In SQL, we must enclose textual data inside either single 
+      or double quotations like 'USA'.</span>
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+
+
+<!--SQL OR OPERATOR-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL OR Operator</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The WHERE clause can contain one or more OR operators.The ORoperator is used to filter 
+      records based on more than one condition, like if you want to return all customers from 
+      Germany but also those from Spain:
+    </div>
+
+    <div class="sql-join-img">
+      <img class="img-sql-or-operator" src="images/sql-or-operator.png" alt="">
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+
+<!--SQL OR OPERATOR SYNTAX-->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL OR operator Syntax</h1>
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-inner-join3" src="images/sql-or-operator-syntax.png" alt="">
+</div>
+
+<!-- #region -->
+<!--SQL OR VS AND-->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL OR operator Syntax</h1>
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The OR operator displays a record if any of the conditions are TRUE. <br><br>
+      The AND operator displays a record if all the conditions are TRUE.
+    </div>
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="result">
+    Below is a selection from that Customer table used in the examples:
+  </div>
+</div>
+
+<div class="sql-or-and">
+  <img class="img-or-and" src="images/sql-or-and.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--UPDATE TABLE TO COMBINING-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>At least One Condition Must Be True</h1>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result1">
+    The following SQL statement selects all fields from Customers where either City is
+    "Berlin", CustomerName starts with the letter "G" or Country is "Norway":
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      <h4>Example:</h4>
+
+      <img src="images/sql-one-condition.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="top">
+  <div class="sql-join">
+    <h1>Combining AND and OR</h1>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result1">
+    You can combine the AND and OR operators. <br><br>
+    The following SQL statement selects all customers from Spain that starts with a "G" or an "R". <br><br>
+    Make sure you use parenthesis to get the correct result.
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      <h4>Example:</h4>
+
+      <img src="images/sql-combining.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    Without parenthesis, the select statement will return all customers from Spain that starts 
+    with a "G", plus all customers that starts with an "R", regardless of the country value:
+  </div>
+</div>
+
+<div class="first-container">
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      <h4>Example:</h4> <br>
+
+      Select all customer that either. <br><br>
+      are from Spain and starts with either "G", or <br><br>
+      starts with the letter "R"
+
+      <img src="images/sql-combining1.png" alt="">
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+
+<!--SQL AND OPERATOR-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL AND Operator</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The SQL AND operator selects data if all condition are TRUE <br><br>
+    </div>
+    <h4>Example</h4>
+
+    <div class="sql-join-img">
+      <img class="img-and-opearator" src="images/sql-and-operator.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    Here, the SQL command selects first_name and of last_name all customers 
+    whose country is USA and last_name is Doe from the Customers table.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-and-operator1.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--SQL NOT OPERATOR-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL NOT Operator</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The SQL NOT operator selects data if the given condition is FALSE. <br><br>
+    </div>
+    <h4>Example</h4>
+
+    <div class="sql-join-img">
+      <img class="img-and-opearator" src="images/sql-not-operator.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    Here, the SQL command selects first_name and last_name of all customers where 
+    the country is not USA from the Customers table.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-not-operator1.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--COMBINING MULTIPLE OPERATOR-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>Combing Multiple Operators</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      It is also possible to combine multiple AND,OR and NOT operators in an SQL statement <br><br>
+      For example, let's suppose we want to select customer where country is either USA or UK <br>
+      and age is less than 26.
+    </div>
+    
+
+    <div class="sql-join-img">
+      <img class="img-and-opearator" src="images/sql-combining-multiple.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-combining-multiple1.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--EXAMPLE COMBINING MULTIPLE-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>Example: Combinng Multiple Operators in SQL</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      Let's look at another example of combining operators.
+    </div>
+    
+
+    <div class="sql-join-img">
+      <img class="img-and-opearator" src="images/sql-example-multiple-combining.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    Here, the SQL command selects all customers where the country is
+    not USA and last_name is not Doe from the Customers table.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-example-multiple-combining1.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--UPDATE SYNTAX-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>The UPDATE statement is used to modify the existing records in a table</h1> 
+  </div>
+</div>
+
+<div class="top">
+  <div class="sql-join">
+    <h1>UPDATE Syntax</h1>
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-inner-join3" src="images/sql-update-syntax.png" alt="">
+</div>
+
+<div class="third-container">
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      <span>Note</span>: Be careful when updating records in a table! Notice the WHEREclause in 
+      the UPDATE statement. The WHERE clause specifies which record(s) that should be updated. 
+      If you omit the WHERE clause, all records in the table will be updated!
+    </div>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    Below is a selection from the Customers table used in the examples:
+  </div>
+</div>
+
+<div class="sql-or-and">
+  <img class="img-or-and" src="images/sql-update-syntax1.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--UPDATE TABLE-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>UPDATE Table</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The following SQL statement updates the first customer (CustomerID = 1) with a new contact person and a new city. <br><br>
+    </div>
+    
+    <h4>Example</h4>
+
+    <div class="sql-join-img">
+      <img class="img-sql-update-table" src="images/sql-update-table.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    The selection from the "Customers" table will now look like this:
+  </div>
+</div>
+
+<div class="sql-or-and">
+  <img class="img-or-and" src="images/sql-update-table1.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--UPDATE Multiple Records-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>UPDATE Multiple Records</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      It is the WHERE clause that determines how many records will be updated <br><br>
+      The following SQL statement will update the ContactName to "Juan" for all records
+      where country is "Mexico" <br><br>
+    </div>
+    
+    <h4>Example</h4>
+
+    <div class="sql-join-img">
+      <img class="img-sql-update-table" src="images/sql-update-table2.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    The selection from the "Customers" table will now look like this:
+  </div>
+</div>
+
+<div class="sql-or-and">
+  <img class="img-or-and" src="images/sql-update-table3.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--SQSL DELETE-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL DELETE</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      In SQL, the DELETE clause is used to delete row(s) from a database table. <br><br>
+    </div>
+    <h4>Example</h4>
+
+    <div class="sql-join-img">
+      <img class="img-sql-delete" src="images/sql-delete.png" alt="">
+    </div>
+
+    <div class="sql-join-info">
+      Here, the SQL command will delete a row from the Customer table if its customer_id is 4.
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+
+<!--DELETE SYNTAX-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>DELETE Syntax</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The syntax of the SQL DELETE command is:
+    </div>
+    
+
+    <div class="sql-join-img">
+      <img class="img-sql-delete" src="images/sql-delete-syntax.png" alt="">
+    </div>
+
+    <div class="sql-join-info">
+      Here,
+    </div>
+    <ul class="sql-join-list">
+      <li>table_name is the name of the table from which rows are to be deleted</li>
+      <li>condition specifies which rows should be deleted</li>
+      <li>“[ ]” indicates that the WHERE clause is optional</li>
+    </ul>
+  </div>
+</div>
+<!-- #endregion -->
+
+<!--DELETE a Single  Row in a table-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>Delete a Single Row in a table</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      We can delete a single row in a table using the DELETE command. For example,
+    </div>
+
+    <div class="sql-join-img">
+      <img class="img-sql-delete" src="images/sql-delete-syntax1.png" alt="">
+    </div>   
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    Here, the SQL command will delete a row from the Customers table if its customer_id is 5.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-delete-syntax2.png" alt="">
+</div>
+<!-- #endregion -->
+
+<!--DELETE ALL ROWS -->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>Delete all Rows in a Table</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      The WHERE clause determines which rows to delete. However, we can delete all rows at once if 
+      we comit the WHERE clause. For example,
+    </div>
+
+    <div class="sql-join-img">
+      <img class="img-sql-delete" src="images/sql-delete-all.png" alt="">
+    </div>   
+
+    <div class="sql-join-info">
+      Here, the SQL command deletes all rows from the Customers table.
+    </div>
+  </div>
+</div>
+<div class="third-container">
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      <span>Note:</span> Be careful when you use DELETE. Records may be lost permanently if the database is not
+      backed up.
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+
+<!--SQL LIKE OPERATOR-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL LIKE Operator</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      We use the SQL LIKE operator with the WHERE clause to get a result set that matches the given
+      string pattern. <br><br>
+    </div>
+    <h4>Example</h4>
+
+    <div class="sql-join-img">
+      <img class="img-sql-like" src="images/sql-like-operator.png" alt="">
+    </div>
+
+    <div class="sql-join-info">
+      Here, the SQL command selects the first name of customers whose country is UK.
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+
+<!--SQL LIKE SYNTAX-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>SQL LIKE Syntax</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-img">
+      <img class="img-sql-delete" src="images/sql-like-syntax.png" alt="">
+    </div>
+
+    <div class="sql-join-info">
+      Here,
+    </div>
+    <ul class="sql-join-list">
+      <li>column1,column2, ... are the columns to select the data from</li>
+      <li>table is the name of the table</li>
+      <li>column is the column we want to apply the filter to</li>
+      <li>LIKE matches the column with value</li>
+      <li>value is the pattern you want to match in the specified column</li>
+    </ul>
+  </div>
+</div>
+<!-- #endregion -->
+
+<!--SQL LIKE EXAMPLE-->
+<!-- #region -->
+<div class="top">
+  <div class="sql-join">
+    <h1>Example: SQL LIKE</h1>
+  </div>
+</div>
+
+<div class="first-container"> 
+  <div class="sql-joins-container">
+    <div class="sql-join-img">
+      <img class="img-sql-like" src="images/sql-like-example.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="second-container">
+  <div class="result">
+    Here, the SQL command selects the first name of customers whose country is UK.
+  </div>
+</div>
+
+<div class="sql-inner-join-syntax">
+  <img class="img-sql-subquery-example" src="images/sql-like-example1.png" alt="">
+</div>
+
+<div class="third-container">
+  <div class="sql-joins-container">
+    <div class="sql-join-info">
+      <span>Note:</span> Although the LIKE operator behaves similarly to the = operator in this example, they are not
+      the same. The = operator is used to check equality, whereas the LIKE operator is used to match
+      string patterns only.
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+</body>
+</html>

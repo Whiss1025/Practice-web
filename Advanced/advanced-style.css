@@ -1,0 +1,333 @@
+*{
+  margin: 0;
+  padding-top: 20px;
+  font-family: "Roboto" , serif;
+  color: #133E87;
+  font-weight: 500;
+}
+
+div {
+  padding: 0;
+}
+h1 {
+   padding: 0px;
+    
+}
+
+h4{
+  font-weight: 100;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sql-join {
+  padding-bottom: 10px;
+  width: 970px;
+  
+}
+
+.sql-joins-container {
+  padding: 20px 35px;
+  background-color: #b2c9ec;
+  border-radius: 20px;
+  width: 900px ;
+
+}
+
+.sql-join-info {
+  font-size: 20px;
+}
+
+.sql-join-img {
+  width: 900px;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.sql-join-list{
+  list-style-type: disc;
+  padding-top: 0;
+}
+
+.result {
+  margin-top: 20px;
+  width: 880px;
+}
+
+.sql-join-bot {
+  width: 900px;
+  margin-bottom: 50px;
+}
+
+.img-join-syntax {
+  width: 900px;
+  height: 100px;
+}
+
+/**Example Join Two Table **/
+.top1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.sql-join1 {
+  padding-bottom: 10px;
+  width: 970px;
+}
+
+.img-join-example {
+  width: 900px;
+  height: 200px;
+}
+
+.sql-join-example {
+
+  height: 600px;
+  width: 600px;
+}
+
+.img-join-example1 {
+  width: 100%;
+  height: 100%;
+}
+
+.img-join-example-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.img-join-example2{
+  width: 1000px;
+}
+
+.img-join-example-container1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+/**SQL INNER JOIN**/
+.sql-inner-join-img {
+  width: 900px;
+  padding: 0;
+}
+
+.img-inner-join {
+  width: 100%;
+  height: 130px;
+}
+
+.second-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.result1 {
+  margin-top: 40px;
+  width: 880px;
+}
+
+.h4-inner-join{
+  margin-bottom: 10px;
+}
+
+.sql-inner-join-img1 {
+  width: 900px;
+  padding: 0;
+}
+
+.img-inner-join1 {
+  width: 100%;
+  height: 80px;
+}
+
+.sql-inner-join-img2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom:  40px;
+}
+
+.img-inner-join2 {
+  width: 400px;
+  height: 250px;
+}
+
+span{
+  font-weight: 900;
+}
+
+/**INNER JOIN SYNTAX**/
+
+.third-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.sql-inner-join-syntax {
+  display: flex;
+  justify-content: center;
+}
+
+.img-inner-join3 {
+  width: 975px;
+  height: 110px;
+}
+
+.top2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.img-inner-join-syntax {
+  height: 90px;
+}
+
+.forth-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+ 
+}
+
+/**SQL LEFT JOIN**/
+
+.top3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.img-left-join {
+  height: 350px;
+  width: 600px;
+}
+
+.sql-left-join- {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fifth-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.img-left-join-examples {
+  height: 100px;
+}
+
+.top4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/**SQL RIGHT JOIN EXAMPLE**/
+.img-right-join-example {
+  height: 200px;
+  width: 980px;
+  padding: 0;
+}
+
+.img-right-join-example1 {
+  height: 600px;
+  width: 580px;
+  padding: 0;
+}
+
+.result2{
+  margin-bottom: 40px;
+  width: 880px;
+}
+
+/**HAVING CLAUSE**/
+
+.img-sql-having{
+  height: 150px;
+}
+
+.img-sql-having1{
+  height: 220px;
+  width: 980px;
+}
+
+.img-sql-having-example{
+  height: 100px;
+}
+
+.img-sql-having-example1{
+  height: 120px;
+  width: 980px;
+}
+
+.img-sql-having-example2{
+  height: 140px;
+}
+
+/**SUBQUERY**/
+
+.img-sql-subquery {
+  height: 250px;
+}
+
+.img-sql-subquery-syntax{
+  width: 980px;
+  height: 250px;
+}
+
+.sql-subquery-syntax {
+  display: flex;
+  justify-content: center;
+}
+
+.img-sql-subquery-example {
+  height: 700px;
+  width: 580px;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.img-sql-outer-join {
+  height: 600px;
+  width: 580px;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.result3 {
+  margin-top: -20px;
+  width: 880px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Quiz</title>
+    <link rel="stylesheet" href="ambot-style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>SQL Query Quiz</h1>
+
+        <div id="question1" class="question">
+            <p>1. Write an SQL query to fetch all records from a table called <code>employees</code>.</p>
+        </div>
+
+        <div id="question2" class="question" style="display: none;">
+            <p>2. Write an SQL query to fetch the employee names and their salaries from the <code>employees</code> table.</p>
+        </div>
+
+        <form id="quizForm">
+            <textarea id="userAnswer" placeholder="Write your SQL query here..." rows="4"></textarea>
+            <br>
+            <button type="button" onclick="checkAnswer()">Submit</button>
+            <button type="button" onclick="resetQuiz()">Try Again</button>
+        </form>
+
+        <div id="feedback"></div>
+        <div id="score" style="display: none;">
+            <h2>Your Score: <span id="scoreValue"></span> / 2</h2>
+        </div>
+    </div>
+
+    <script src="ambot-script.js"></script>
+</body>
+</html>
